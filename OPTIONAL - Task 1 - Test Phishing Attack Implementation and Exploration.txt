@@ -1,0 +1,50 @@
+Document by Chandu Dissanayake
+
+# Implementation of a Test Phishing Attack Using Zphisher
+
+## Introduction
+Zphisher is an advanced phishing tool that allows attackers to easily create phishing websites for a variety of platforms. This guide outlines the steps to implement a test phishing attack using Zphisher, purely for educational and security awareness purposes.
+
+## Step 1: Setting Up Zphisher
+1. **Install Zphisher**:
+   - Start by cloning the Zphisher repository to your system.
+     ```
+     git clone https://github.com/htr-tech/zphisher.git
+     cd zphisher
+     ```
+   - Make the script executable and run it:
+     ```
+     chmod +x zphisher.sh
+     ./zphisher.sh
+     ```
+   - Follow the on-screen instructions to ensure all dependencies are installed.
+
+2. **Launch Zphisher**:
+   After successful installation, run the tool again:
+   ```
+   ./zphisher.sh
+   ```
+   This will display a menu with various phishing templates for popular websites.
+
+## Step 2: Choosing a Phishing Template
+Zphisher provides a range of templates for platforms like Facebook, Instagram, Gmail, Twitter, and many others. For this test, let's use **Instagram** as the phishing target:
+1. Select the Instagram phishing template by typing the corresponding number.
+2. You will be asked to choose between different methods (Localhost, Ngrok, Cloudflare) for hosting the phishing page. Select **Ngrok** for remote access, as it provides a public URL.
+
+## Step 3: Generating the Phishing URL
+After selecting Ngrok, Zphisher will automatically generate a phishing URL. This URL will look like a legitimate Instagram login page.
+1. Share this URL with the test subject or use it in a controlled environment to analyze the phishing attack.
+
+## Step 4: Monitoring and Capturing Data
+Once the test subject enters credentials (in a controlled, ethical test), Zphisher will capture the login data and display it in the terminal.
+- **Captured Information**: Username, password, and any other input.
+
+## Step 5: Analyzing the Results
+Evaluate the test by analyzing the captured credentials and the behavior of the phishing page. This can help demonstrate how phishing attacks work and how easily people can be tricked by seemingly legitimate websites.
+
+## Conclusion
+This test attack, carried out using Zphisher, highlights the dangers of phishing and reinforces the importance of staying vigilant. It is a powerful reminder of why educating users about phishing and checking URLs is essential in cybersecurity.
+
+**Note**: This attack was implemented for learning purposes only. Always use such tools responsibly and within legal boundaries.
+
+#StaySafe #CyberSecurity #PhishingAwareness
